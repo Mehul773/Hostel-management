@@ -1,0 +1,16 @@
+{
+  "name": "hostelmanagement",
+  "version": "1.0.0",
+  "description": "=> USECASES",
+  "scripts": {
+    "start": "concurrently \"npm run client\" \"npm run server\"",
+    "client": "cd client && npm run dev",
+    "server": "cd server && nodemon index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

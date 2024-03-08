@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+   font-family: "Poppins", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  /* font-family: 'Rubik', sans-serif; */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="textarea"],
+input[type="number"] {
+  @apply w-full border-2 border-bg_dark_section rounded-md py-2 px-4 text-black;
+}
+
+textarea {
+  @apply w-full border-2 border-bg_dark_section rounded-md py-2 px-4 text-black min-h-[200px];
+}
+.btn {
+  @apply w-full bg-bg_dark_section rounded-md py-2.5 px-4 text-bg_white  hover:scale-95 hover:bg-bg_red duration-200;
+}
+
+.give_height {
+  @apply min-h-[calc(100vh-64px)];
+}
+
+.labels {
+  @apply bg-bg_dark_section text-bg_white rounded-xl shadow-md border-4 border-bg_white;
+}
+
+.labels_2 {
+  @apply bg-bg_red text-bg_white text-xs md:text-sm rounded-md py-1 px-2 shadow-md;
+}
+
+.labels_3 {
+  @apply bg-bg_dark_section text-xs md:text-sm text-bg_white rounded-md py-1 px-2 shadow-md;
+}
+
+.red-hover {
+  @apply hover:scale-95 hover:bg-bg_red hover:text-bg_white_font duration-200;
+}
